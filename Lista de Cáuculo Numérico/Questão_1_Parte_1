@@ -1,0 +1,17 @@
+# 1) Cálculo da média de 4 notas 
+
+def calcular_media(): # Função
+    # Solicita as 4 notas bimestrais do usuário
+    notas = []  # Lista para armazenar as notas
+    for i in range(1, 5):
+        nota = float(input(f"Digite a nota {i}: "))  # Lê a nota do usuário
+        notas.append(nota)  # Adiciona a nota à lista
+    
+    # Calcula a média
+    media = sum(notas) / len(notas)  # Soma as notas e divide pelo número de notas
+    
+    # Mostra a média
+    print(f"A média das notas é: {media:.2f}")  # Exibe a média formatada com duas casas decimais
+
+# Chama a função para executar
+calcular_media()
